@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Text Analyzer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- This is the line that went missing! -->
+            <textarea id="textInput" rows="5" placeholder="Type text here..."></textarea>
+            
+            <button id="analyzebtn">Analyze</button>
+            
+            <div class="results">
+                <p>Total words: <span id="wordcount">0</span></p>
+                <p>Total vowels: <span id="vowelcount">0</span></p>
+                <p>Total Consonants: <span id="consonantcount">0</span></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

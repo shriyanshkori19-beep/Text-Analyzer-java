@@ -1,0 +1,156 @@
+/* Base settings and animated bg */
+body {
+    background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #f1f5f9;
+}
+
+/* Glassmorphism glass card */
+.container {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    width: 440px;
+}
+
+/* Typography styles */
+h2 {
+    font-size: 28px;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+    background: linear-gradient(to right, #818cf8, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #94a3b8;
+    margin: 0 0 20px 0;
+}
+
+.badge {
+    font-size: 11px;
+    background: linear-gradient(135deg, #4f46e5, #a855f7);
+    color: #ffffff;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: 800;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Dark glow interactive textarea */
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1.5px solid rgba(129, 140, 248, 0.2);
+    border-radius: 10px;
+    color: #f8fafc;
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    resize: none;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: rgba(129, 140, 248, 0.8);
+    box-shadow: 0 0 12px rgba(99, 102, 241, 0.3);
+}
+
+/* Cyber gradient button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4f46e5 0%, #c026d3 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(192, 38, 211, 0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(192, 38, 211, 0.5);
+    background: linear-gradient(135deg, #6366f1 0%, #d946ef 100%);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Side-by-side metric dashboards */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 15px 10px;
+    text-align: center;
+    border: 1.5px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.card-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0 0 5px 0;
+    color: #94a3b8;
+}
+
+.card-value {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+/* Dynamic color borders and numbers */
+.card-blue { border-color: rgba(14, 165, 233, 0.15); }
+.card-blue .card-value { color: #0ea5e9; }
+.card-blue:hover { 
+    background: rgba(14, 165, 233, 0.06); 
+    border-color: rgba(14, 165, 233, 0.4);
+    box-shadow: 0 5px 15px rgba(14, 165, 233, 0.1);
+}
+
+.card-purple { border-color: rgba(168, 85, 247, 0.15); }
+.card-purple .card-value { color: #a855f7; }
+.card-purple:hover { 
+    background: rgba(168, 85, 247, 0.06); 
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 5px 15px rgba(168, 85, 247, 0.1);
+}
+
+.card-pink { border-color: rgba(236, 72, 153, 0.15); }
+.card-pink .card-value { color: #ec4899; }
+.card-pink:hover { 
+    background: rgba(236, 72, 153, 0.06); 
+    border-color: rgba(236, 72, 153, 0.4);
+    box-shadow: 0 5px 15px rgba(236, 72, 153, 0.1);
+}
